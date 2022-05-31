@@ -45,7 +45,7 @@ class _LocalAndWebObjectsViewState extends State<LocalAndWebObjectsView> {
             SizedBox(
               height: MediaQuery.of(context).size.height * .8,
               child: ClipRRect(
-                borderRadius: BorderRadius.circular(22),
+                borderRadius: BorderRadius.circular(20),
                 child: ARView(
                   onARViewCreated: onARViewCreated,
                 ),
@@ -85,7 +85,7 @@ class _LocalAndWebObjectsViewState extends State<LocalAndWebObjectsView> {
     this.arSessionManager.onInitialize(
           showFeaturePoints: false,
           showPlanes: true,
-          customPlaneTexturePath: "assets/triangle.png",
+          customPlaneTexturePath: "images/triangle.png",
           showWorldOrigin: true,
           handleTaps: false,
         );
@@ -99,7 +99,7 @@ class _LocalAndWebObjectsViewState extends State<LocalAndWebObjectsView> {
     } else {
       var newNode = ARNode(
           type: NodeType.localGLTF2,
-          uri: "assets/Chinken_01/Chinken_01.gltf",
+          uri:"images/Chicken_01/Chicken_01.gltf",
           scale: Vector3(0.2, 0.2, 0.2),
           position: Vector3(0.0, 0.0, 0.0),
           rotation: Vector4(1.0, 0.0, 0.0, 0.0));
